@@ -1,0 +1,194 @@
+/*General rule sets*/
+
+nav,
+header,
+footer {
+  display: block;
+}
+
+body {
+  padding-top: 0;
+  padding-bottom: 1.5%;
+  font-family: sans-serif;
+  line-height: 1;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 1%;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /*This wraps the content around undereneath when the viewport gets smaller*/
+  align-items: center; /*Centres content in the flex container*/
+  text-align: center;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/*Nav bar*/
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: transparent;
+  overflow: hidden;
+  margin: 0;
+  padding-right: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  float: right;
+}
+
+ul.navBar li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 20px 14px;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 15px;
+}
+
+ul.navBar li a:hover {
+  text-decoration: underline;
+}
+
+ul.navBar li.tricolon a {
+  padding: 18px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ul.navBar li.tricolon a:hover {
+  text-decoration: none;
+}
+
+/*ul.navBar li.profileImage img {
+  width: 200px;
+  height: auto;
+  border: hidden;
+  border-radius: 50px;
+}*/
+
+nav.navLow {
+  margin-top: 120px;
+}
+nav.navLow a {
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Custom Styling*/
+
+h1 {
+  font-size: 80px;
+  color: #e6ebf2;
+}
+
+input {
+  width: 580px;
+  font-size: 16px;
+  letter-spacing: 1;
+  padding: 11px 12px;
+  border-radius: 50px;
+  letter-spacing: 1;
+}
+
+#favicons {
+  width: 50%;
+  padding-left: 117px;
+}
+
+.faviconRow1 {
+  padding-top: 2%;
+}
+
+.col-2:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.bookmark {
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+div.bookmark > img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  background-color: white;
+  align-items: center;
+}
+
+div > h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+nav.navLow a.edit {
+  float: right;
+  text-decoration: none;
+  font-size: 15px;
+}
